@@ -1,0 +1,58 @@
+header {
+    display: flex;
+    width: 100%;
+}
+
+header nav {
+    width: 100%;
+}
+
+.navbar {
+    background-color: yellow;
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar span {
+    font-size: 30px;
+    width: 100%;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    color: black;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.navbar-list {
+    display: none;
+}
+
+@media(min-width: 576px){
+    .navbar-list {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+    }
+
+    .navbar-item {
+        height: 100%;
+        padding: 10px;
+        display: flex;
+        align-items: center
+    }
+    .navbar-item a {
+        text-decoration: none;
+    }
+}

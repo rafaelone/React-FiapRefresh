@@ -1,0 +1,48 @@
+.container-home {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 60px);
+    align-items: center;
+    justify-content: center;
+}
+
+.form-control {
+    width: 300px;
+    display: flex;
+    flex-direction: column
+}
+
+.input-control{
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
+
+.input-control label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.input-control input {
+    margin: 10px 0;
+    border: 1px solid black;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.input-control input::placeholder {
+    text-align: center;
+}
+
+
+@media(min-width: 789px){
+    .form-control{
+        width: 500px;
+    }
+
+    .button-control {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
